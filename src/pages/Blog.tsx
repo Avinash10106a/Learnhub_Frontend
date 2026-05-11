@@ -4,12 +4,12 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowRight, Clock } from 'lucide-react';
 
 const blogPosts = [
-    { id: '1', title: 'The Future of Web Development in 2024', excerpt: 'Explore the trends shaping modern web development, from AI-assisted coding to edge computing.', category: 'Web Dev', readTime: '5 min', image: 'webdev2024' },
-    { id: '2', title: 'Getting Started with Machine Learning', excerpt: 'A beginner-friendly guide to understanding ML concepts and building your first model.', category: 'AI/ML', readTime: '8 min', image: 'ml-guide' },
-    { id: '3', title: 'Why TypeScript is Taking Over', excerpt: 'TypeScript has become the standard for large-scale applications. Here is why you should learn it.', category: 'TypeScript', readTime: '4 min', image: 'typescript' },
-    { id: '4', title: 'Cloud Computing Explained', excerpt: 'From AWS to Azure, understand the fundamentals of cloud infrastructure and deployment.', category: 'Cloud', readTime: '6 min', image: 'cloud' },
-    { id: '5', title: 'Cybersecurity Essentials for Developers', excerpt: 'Every developer needs to understand security basics. This guide covers the essentials.', category: 'Security', readTime: '7 min', image: 'security' },
-    { id: '6', title: 'Building Scalable APIs with Node.js', excerpt: 'Best practices for designing and building production-ready REST APIs with Express and MongoDB.', category: 'Backend', readTime: '10 min', image: 'nodejs-api' },
+    { id: '1', title: 'The Future of Web Development in 2024', excerpt: 'Explore the trends shaping modern web development, from AI-assisted coding to edge computing.', category: 'Web Dev', readTime: '5 min', image: 'https://www.pranathiss.com/blog/wp-content/uploads/Future-of-Web-Development-AI-Chatbots-and-Voice-User-Interfaces.jpg' },
+    { id: '2', title: 'Getting Started with Machine Learning', excerpt: 'A beginner-friendly guide to understanding ML concepts and building your first model.', category: 'AI/ML', readTime: '8 min', image: 'https://media.geeksforgeeks.org/geeksforgeeks/GetStartedWithMachineLearning/RSVndjS2gMMHD20240402164003.jpg' },
+    { id: '3', title: 'Why TypeScript is Taking Over', excerpt: 'TypeScript has become the standard for large-scale applications. Here is why you should learn it.', category: 'TypeScript', readTime: '4 min', image: 'https://byteiota.com/wp-content/uploads/2026/01/mastra-1-0-typescript-ai-framework-800x400.jpg' },
+    { id: '4', title: 'Cloud Computing Explained', excerpt: 'From AWS to Azure, understand the fundamentals of cloud infrastructure and deployment.', category: 'Cloud', readTime: '6 min', image: 'https://insights.daffodilsw.com/hubfs/AI%20Cloud%20computing.png' },
+    { id: '5', title: 'Cybersecurity Essentials for Developers', excerpt: 'Every developer needs to understand security basics. This guide covers the essentials.', category: 'Security', readTime: '7 min', image: 'https://www.techfunnel.com/wp-content/uploads/2024/09/AI-Cyber-Security.png' },
+    { id: '6', title: 'Building Scalable APIs with Node.js', excerpt: 'Best practices for designing and building production-ready REST APIs with Express and MongoDB.', category: 'Backend', readTime: '10 min', image: 'https://cdn.hashnode.com/uploads/covers/5fc16e412cae9c5b190b6cdd/ec5d63f1-d65f-4852-a297-9c517fc76e2f.png' },
 ];
 
 export default function Blog() {
@@ -29,7 +29,7 @@ export default function Blog() {
                             <Card className="overflow-hidden group h-full hover:border-primary/30 transition-all duration-300">
                                 <div className="h-40 sm:h-48 overflow-hidden">
                                     <img
-                                        src={`https://picsum.photos/seed/${post.image}/600/400`}
+                                        src={post.image}
                                         alt={post.title}
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
